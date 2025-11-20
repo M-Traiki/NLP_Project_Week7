@@ -44,9 +44,9 @@ Multiple models were evaluated using TF-IDF (word), Bag-of-Words, and TF-IDF (ch
 
 | Model                         | Accuracy | F1 Score |
 |-------------------------------|----------|----------|
-| **Linear SVM + TF-IDF Char**  | **0.951** | **0.949** |
-| Logistic Regression + TF-IDF  | 0.944 | 0.943 |
-| Multinomial NB + TF-IDF       | 0.940 | 0.937 |
+| **Linear SVM + TF-IDF Char**  | **0.972** | **0.972** |
+| Logistic Regression + TF-IDF  | 0.946 | 0.945 |
+| Multinomial NB + TF-IDF       | 0.942 | 0.939 |
 | Random Forest + TF-IDF        | 0.917 | 0.917 |
 | XGBoost + TF-IDF              | 0.912 | 0.913 |
 
@@ -64,10 +64,6 @@ The best performance consistently came from:
 - **No stemming**  
 - **Minimal cleaning**  
 - **Character-level TF-IDF (2–5 or 3–6 n-grams)**
-
-### **3.3 Visual Results**
-(Insert the bar plots you generated for your slides here)
-
 ---
 
 ## 4. Future Work

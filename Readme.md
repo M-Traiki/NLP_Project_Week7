@@ -21,11 +21,7 @@ Text cleaning and normalization proved critical for model performance. The follo
 - Lowercasing
 - Removing/preserving punctuation depending on experiment
 - Unicode normalization
-- Removal of political entity names  
-  *(e.g., “trump”, “obama”, “putin”, “senate”, “congress”, etc.)*
 - Removal of headlines with fewer than 4 words
-- Standardization of different quote styles  
-  (`“ ” „ ’ ‘` → `"` or `'`)
 
 ### **2.2 Tokenization**
 - Custom tokenizer for word-level vectorizers
@@ -64,7 +60,12 @@ The best performance consistently came from:
 - **No stemming**  
 - **Minimal cleaning**  
 - **Character-level TF-IDF (2–5 or 3–6 n-grams)**
+
+### **3.3 Error Analysis
+ - Removed headlines with 3 or less words
+ - Lead to improvement of model
 ---
+
 
 ## 4. Future Work
 
